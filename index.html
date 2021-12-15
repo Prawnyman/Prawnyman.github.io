@@ -1,7 +1,258 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+<head>
+	<title>Shawn Lee - Game Dev</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/style.css">
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+	<style>
+		.container 
+		{
+		  position: relative;
+		  width: 50%;
+		}
+		
+		.image 
+		{
+		  opacity: 1;
+		  display: block;
+		  width: 100%;
+		  height: auto;
+		  transition: .5s ease;
+		  backface-visibility: hidden;
+		}
+		
+		.middle 
+		{
+		  transition: .5s ease;
+		  opacity: 0;
+		  position: absolute;
+		  top: 40%;
+		  left: 50%;
+		  transform: translate(-50%, -50%);
+		  -ms-transform: translate(-50%, -50%);
+		  text-align: center;
+		}
+		
+		.container:hover .image 
+		{
+		  opacity: 0.3;
+		}
+		
+		.container:hover .middle 
+		{
+		  opacity: 1;
+		}
+		
+		.projectlink 
+		{
+		  background-color: #f7a4f0;
+		  color: rgb(243, 236, 236);
+		  font-size: 16px;
+		  padding: 16px 32px;
+		}
+	</style>
+</head>
+
+<body class="is-preload">
+
+<!-- Wrapper-->
+<div id="wrapper">
+
+	<!-- Nav -->
+	<nav id="nav">
+		<a href="#home" class="icon solid fa-home"><span>Home</span></a>
+		<a href="assets/Resume_ShawnLee.pdf" target="_blank" class="icon solid fa-file-alt"><span>Résumé</span></a>
+		<a href="https://www.linkedin.com/in/prawnyman/" target="_blank" class="icon brands fa-linkedin"><span>LinkedIn</span></a>
+	</nav>
+
+	<!-- Main -->
+	<div id="main">
+
+		<!-- Me -->
+		<article id="home" class="panel">
+			<header>
+				<h1>Shawn Lee</h1>
+				<p>Game Programmer and Designer</p>
+			</header>
+
+			<p>
+				Been working on games both digital and analog since 2011.<br> 
+				Here are some of the projects I'm most proud of.
+			</p>
+
+			<section>
+				<div class="row">
+					<div class="container">
+						<img src="images/rumblejungle/rumblejungle_preview.png" class="image">
+						<p style="text-align:center">
+							<b>
+								Pong Battle Royale on Mobile<br>
+								Responsiblities: Programming, Publishing
+							</b>
+						</p>
+						<div class="middle">
+							<a href="#rumblejungle" class="projectlink">More Info</a>
+						</div>
+					</div>
+
+					<div class="container">
+						<img src="images/ashes/ashes_preview.png" class="image">
+						<p style="text-align:center">
+							<b>
+								Expandable Card Game of Dueling Mages<br>
+								Responsiblities: Playtesting, Rules Drafting
+							</b>
+						</p>
+						<div class="middle">
+							<a href="#ashes" class="projectlink">More Info</a>
+						</div>
+					</div>
+
+					<div class="container">
+						<img src="images/fruitpunch/fruitpunch_preview.jpg" class="image">
+						<p style="text-align:center">
+							<b>
+								Cute Co-Op Platformer<br>
+								Responsiblities: Producer, Asset Manager
+							</b>
+						</p>
+						<div class="middle">
+							<a href="#fruitpunch" class="projectlink">More Info</a>
+						</div>
+					</div>
+
+					<div class="container">
+						<img src="images/geropero/geropero_preview.jpg" class="image">
+						<p style="text-align:center">
+							<b>
+								Froggy Action-Platformer<br>
+								Responsiblities: Gameplay, Animation
+							</b>
+						</p>
+						<div class="middle">
+							<a href="#geropero" class="projectlink">More Info</a>
+						</div>
+					</div>
+
+					<div class="container">
+						<img src="images/sugarheist/sugarheist_preview.jpg" class="image">
+						<p style="text-align:center">
+							<b>
+								Candy-stealing Board Game<br>
+								Responsiblities: Designer, Initial Concept
+							</b>
+						</p>
+						<div class="middle">
+							<a href="#sugarheist" class="projectlink">More Info</a>
+						</div>
+					</div>
+
+					<div class="container">
+						<img src="images/bak-ka/bak-ka_preview.jpg" class="image">
+						<p style="text-align:center">
+							<b>
+								Smash meets GunBound<br>
+								Responsiblities: Gameplay/Input, "Art"
+							</b>
+						</p>
+						<div class="middle">
+							<a href="#bak-ka" class="projectlink">More Info</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</article>
+
+		<!-- Rumble Jungle -->
+		<article id="rumblejungle" class="panel">
+			<header>
+				<h2>Rumble Jungle</h2>
+			</header>
+			
+			<p>
+				<h3>Responsiblities: Design, Network Programming, AWS/Playfab Server Integration, Production, Monetization, Publishing</h3><br>
+				Mobile game of pong battle royale. Originally pitched for Cargo Studio's first incubation program.<br>
+				Now available on <a href="https://play.google.com/store/apps/details?id=com.CargoStudio.RumbleJungle" target="_blank">Google Play</a>.
+			</p>
+
+			<h3>Trailer</h3>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/3InblUGKkbc" title="Rumble Jungle Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			
+			<br>
+
+			<h3>Screenshots</h3>
+			<div class="gallery">
+				<div class="gallery-item gallery-item.item-3x4">
+					<img class="thumb placeholder" src="images/rumblejungle/main.png" data-src="images/rumblejungle/main.png" data-image="images/rumblejungle/main.png" data-title="" alt="">
+					<div class="caption"><span>Caption 1</span></div>
+				</div>
+				<div class="gallery-item gallery-item.item-3x4">
+					<img class="thumb placeholder" src="images/rumblejungle/main.png" data-src="images/rumblejungle/main.png" data-image="images/rumblejungle/main.png" data-title="" alt="">
+					<div class="caption"><span>Caption 1</span></div>
+				</div>
+			</div>
+		</article>		
+		
+		<article id="ashes" class="panel">
+			<header>
+				<h2>Ashes Reborn</h2>
+			</header>
+			<p>
+				Mobile game of pong battle royale. <br>
+				Now available on <a href="https://play.google.com/store/apps/details?id=com.CargoStudio.RumbleJungle" target="_blank">Google Play</a>.
+			</p>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/zxgBxjPcFPY" title="Ashes Reborn Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</article>
+		
+		<!-- Fruit Punch! -->
+		<article id="fruitpunch" class="panel">
+			<header>
+				<h2>Fruit Punch!</h2>
+			</header>
+			<p>
+				Arcade fruits. <br>
+				Download it from the <a href="https://arcade.digipen.edu/games/fruit-punch" target="_blank">DigiPen Arcade</a>.
+			</p>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/Q9MNtYdbkJ8" title="Fruit Punch! Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</article>
+
+
+		<!-- Bak-ka -->
+		<article id="bak-ka" class="panel">
+			<header>
+				<h2>Bak-ka</h2>
+			</header>
+			<p>
+				Arcade fruits. <br>
+				Download it from the <a href="https://arcade.digipen.edu/games/bak-ka" target="_blank">DigiPen Arcade</a>.
+			</p>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/rBUpPAqA34o" title="Bak-ka Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</article>
+
+	</div>
+
+<!-- Footer -->
+<div id="footer">
+	<ul class="copyright">
+		<li>&copy; WEBSITE COPYRIGHT © 2021 SHAWN LEE. ALL RIGHTS RESERVED.</li>
+	</ul>
+</div>
+
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+<script src="assets/js/gallery.js"></script>
 </body>
+
 </html>
