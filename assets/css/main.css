@@ -23,7 +23,7 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: center;}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -1328,7 +1328,7 @@ input, select, textarea {
 		font-family: 'Source Sans Pro', sans-serif;
 		font-weight: 300;
 		color: #313131;
-		font-size: 20pt;
+		font-size: 24pt;
 		line-height: 1.75em;
 	}
 
@@ -1379,7 +1379,13 @@ input, select, textarea {
 		letter-spacing: -0.015em;
 	}
 
-	h3, h4, h5, h6 {
+	h3
+	{
+		font-size: 1.5em;
+		letter-spacing: 0.015em;
+	}
+	
+	h4, h5, h6 {
 		font-size: 1.25em;
 		letter-spacing: 0.015em;
 	}
@@ -1533,7 +1539,7 @@ input, select, textarea {
 
 		header > p {
 			margin: 0.5em 0 0 0;
-			color: #aaa;
+			color: rgb(34, 34, 34);
 		}
 
 		@media screen and (max-width: 736px) {
@@ -1548,6 +1554,7 @@ input, select, textarea {
 
 	.image {
 		display: inline-block;
+		outline-style: solid;
 	}
 
 		.image img {
