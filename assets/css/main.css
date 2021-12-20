@@ -23,11 +23,19 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: center;}
+	vertical-align: top;
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;}
+	display: block;
+}
+
+.article
+{
+	background-color: rgb(202, 0, 202);
+	display: none;
+}
 
 body {
 	line-height: 1;
@@ -1306,11 +1314,20 @@ input, select, textarea {
 	}
 
 	body {
-		background-image: url("images/overlay.png"), url("images/bg.jpg");
+		background-image: url("images/overlay.png"); /* url("images/bg.jpg" );*/
+		/*background-color: #111111;
+
+		background: #50a3a2;*/
+		/*background: -webkit-linear-gradient(top left, #50a3a2 0%, #53e3a6 100%);
+		background: -moz-linear-gradient(top left, #50a3a2 0%, #53e3a6 100%);
+		background: -o-linear-gradient(top left, #50a3a2 0%, #53e3a6 100%);*/
+		background: linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 100%);
+
 		background-repeat: repeat, no-repeat;
 		background-size: auto, 100% 100%;
 		background-attachment: fixed;
 		overflow-y: scroll;
+		z-index: 1;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -1328,10 +1345,10 @@ input, select, textarea {
 		font-family: 'Source Sans Pro', sans-serif;
 		font-weight: 300;
 		color: #313131;
-		font-size: 24pt;
+		font-size: 16pt;
 		line-height: 1.75em;
 	}
-
+/*
 		@media screen and (max-width: 1680px) {
 
 			body, input, textarea, select {
@@ -1362,19 +1379,26 @@ input, select, textarea {
 				font-size: 11pt;
 			}
 
-		}
+		}*/
 
 	strong, b, h1, h2, h3, h4, h5, h6 {
 		font-weight: 400;
 		color: #1d1d1d;
 	}
 
+	b
+	{
+		font-weight: 550;
+	}
+
 	h1 {
 		font-size: 2.4em;
 		letter-spacing: -0.015em;
+		font-family: 'Roboto', sans-serif;
 	}
 
 	h2 {
+		font-weight: 800;
 		font-size: 1.8em;
 		letter-spacing: -0.015em;
 	}
@@ -1419,8 +1443,8 @@ input, select, textarea {
 	hr {
 		border: 0;
 		border-top: solid 1px #ddd;
-		padding: 1.5em 0 0 0;
-		margin: 1.75em 0 0 0;
+		padding: 1em 0 0 0;
+		margin: 1em 0 0 0;
 	}
 
 	sub {
@@ -1439,8 +1463,8 @@ input, select, textarea {
 		clear: both;
 	}
 
-	p, ul, ol, dl, table, blockquote, form {
-		margin-bottom: 2em;
+	ul, ol, dl, table, blockquote, form {
+		margin-bottom: 2%;
 	}
 
 /* Table */
@@ -1534,7 +1558,7 @@ input, select, textarea {
 		}
 
 	header {
-		margin: 0 0 1.5em 0;
+		margin: 0 0 1em 0;
 	}
 
 		header > p {
@@ -1553,8 +1577,20 @@ input, select, textarea {
 /* Image */
 
 	.image {
+		/*
 		display: inline-block;
 		outline-style: solid;
+		vertical-align: middle;*/
+		max-height: 100%;
+		max-width: 100%;
+		width: auto;
+		height: relative;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
 	}
 
 		.image img {
@@ -1576,6 +1612,16 @@ input, select, textarea {
 		.image.left {
 			float: left;
 			margin: 0 2em 2em 0;
+		}
+
+		.image.right
+		{
+			max-height: 100%;
+			max-width: 100%;
+			width: auto;
+			height: relative;
+			float: right;
+			margin: auto;
 		}
 
 		.image.centered {
@@ -1601,12 +1647,13 @@ input, select, textarea {
 		transition: background-color .25s ease-in-out;
 		-webkit-appearance: none;
 		display: inline-block;
-		background-color: #222222;
-		color: #ffffff;
+		background-color: inherit;
+		color: #000000;
 		border: 0;
 		cursor: pointer;
-		outline: 0;
-		padding: 0.7em 1.5em 0.7em 1.5em;
+		outline: solid;
+		padding: 3px 6px;
+		/*padding: 0.7em 1.5em 0.7em 1.5em;*/
 	}
 
 		input[type="button"]:hover,
@@ -1615,6 +1662,7 @@ input, select, textarea {
 		button:hover,
 		.button:hover {
 			background-color: #333333;
+			color: white;
 		}
 
 		input[type="button"]:active,
@@ -1623,6 +1671,7 @@ input, select, textarea {
 		button:active,
 		.button:active {
 			background-color: #444444;
+			color: white;
 		}
 
 		input[type="button"].alt,
@@ -1631,6 +1680,7 @@ input, select, textarea {
 		button.alt,
 		.button.alt {
 			background-color: #777777;
+			color: white;
 		}
 
 			input[type="button"].alt:hover,
@@ -1639,6 +1689,7 @@ input, select, textarea {
 			button.alt:hover,
 			.button.alt:hover {
 				background-color: #888888;
+				color: white;
 			}
 
 			input[type="button"].alt:active,
@@ -1647,6 +1698,7 @@ input, select, textarea {
 			button.alt:active,
 			.button.alt:active {
 				background-color: #999999;
+				color: white;
 			}
 
 		input[type="button"].small,

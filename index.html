@@ -1,13 +1,28 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en-us">
 
 <head>
-	<title>Shawn Lee - Game Dev</title>
+	<title>Shawn Lee - Game Developer</title>
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+	<meta name="author" content="Shawn Lee">
+	<meta name="keywords" content="game developer, singapore, game designer, game programmer, software engineer, unity, unreal, prawnyman" />
+	<meta name="description" content="Game programmer / designer based in Singapore"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no shrink-to-fit=no" />
+
+	<meta property="og:title" content="Shawn Lee | Game Developer">
+	<meta property="og:description" content="Game programmer / designer based in Singapore - Open to Work">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="images/profilepic.jpg">
+
+	<meta name="robots" content="noindex, nofollow">
+
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+	
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="stylesheet" href="assets/css/style.css">
 	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	<link rel="stylesheet/less" type="text/css" href="assets/css/bubbles.less" />
 
 	<style>
 		.container 
@@ -18,7 +33,6 @@
 		
 		.image 
 		{
-		  opacity: 1;
 		  display: block;
 		  width: 100%;
 		  height: auto;
@@ -26,6 +40,16 @@
 		  backface-visibility: hidden;
 		}
 		
+		.zoom 
+		{
+			transition: transform .5s;
+		}
+
+		.zoom:hover 
+		{
+			transform: scale(1.1);
+		}
+
 		.middle 
 		{
 		  transition: .5s ease;
@@ -55,6 +79,42 @@
 		  font-size: 16px;
 		  padding: 16px 32px;
 		}
+
+		.hr {
+			margin-top: 10px; margin-bottom: 10px
+		}
+
+		.text_box
+		{
+			padding:0; 
+			background-color: rgb(235, 235, 235);
+			vertical-align: middle;
+		}
+
+		.text_box_para
+		{
+			text-align:left; 
+			padding-left: 2%; 
+			padding-top: 2%; 
+			padding-bottom: 2%;
+		}
+
+		.learnmore
+		{
+			transition: transform .5s;
+			font-weight: 500;
+			padding: 3px 6px;
+			outline: solid;
+			outline-width: 2px;
+			outline-color: rgb(0, 0, 0);
+			text-decoration:none
+		}
+
+
+		.main_gametitle
+		{
+			font-size: 125%; font-weight: 600;
+		}
 	</style>
 </head>
 
@@ -62,7 +122,6 @@
 
 <!-- Wrapper-->
 <div id="wrapper">
-
 	<!-- Nav -->
 	<nav id="nav">
 		<a href="#home" class="icon solid fa-home"><span>Home</span></a>
@@ -72,196 +131,139 @@
 
 	<!-- Main -->
 	<div id="main">
-
-		<!-- Me -->
+		<!-- Scrolling Menu -->
 		<article id="home" class="panel">
-			<header>
+			<header style="text-align: center;">
 				<h1>Shawn Lee</h1>
 				<p>Game Programmer and Designer</p>
 			</header>
 
-			<p>
-				Been working on games both digital and analog since 2011.<br> 
-				Here are some of the projects I'm most proud of.
+			<p style="text-align: center;">
+				Developing digital and analog games since 2011.<br> 
+				Below are some of the projects I'm most proud of.
 			</p>
 
-			<section>
-				<div class="row aln-left">
-					<div class="container">
-						<img src="images/rumblejungle/rumblejungle_preview.png" class="image">
-						<p style="text-align:center">
-							<b>
-								Pong Battle Royale on Mobile<br>
-								Responsiblities: Programming, Publishing
-							</b>
-						</p>
-						<div class="middle">
-							<a href="#rumblejungle" class="projectlink">More Info</a>
-						</div>
-					</div>
+			<hr style="width:100%">
+			<h2 style="text-align: center;">2021</h2>
+			<hr style="width:100%">
 
-					<div class="container">
-						<img src="images/ashes/ashes_preview.png" class="image">
-						<p style="text-align:center">
-							<b>
-								Expandable Card Game of Dueling Mages<br>
-								Responsiblities: Playtesting, Rules Drafting
-							</b>
-						</p>
-						<div class="middle">
-							<a href="#ashes" class="projectlink">More Info</a>
-						</div>
-					</div>
-
-					<div class="container">
-						<img src="images/fruitpunch/fruitpunch_preview.jpg" class="image">
-						<p style="text-align:center">
-							<b>
-								Cute Co-Op Platformer<br>
-								Responsiblities: Producer, Asset Manager
-							</b>
-						</p>
-						<div class="middle">
-							<a href="#fruitpunch" class="projectlink">More Info</a>
-						</div>
-					</div>
-
-					<div class="container">
-						<img src="images/geropero/geropero_preview.jpg" class="image">
-						<p style="text-align:center">
-							<b>
-								Froggy Action-Platformer<br>
-								Responsiblities: Gameplay, Animation
-							</b>
-						</p>
-						<div class="middle">
-							<a href="#geropero" class="projectlink">More Info</a>
-						</div>
-					</div>
-
-					<div class="container">
-						<img src="images/sugarheist/sugarheist_preview.jpg" class="image">
-						<p style="text-align:center">
-							<b>
-								Candy-stealing Board Game<br>
-								Responsiblities: Designer, Initial Concept
-							</b>
-						</p>
-						<div class="middle">
-							<a href="#sugarheist" class="projectlink">More Info</a>
-						</div>
-					</div>
-
-					<div class="container">
-						<img src="images/bak-ka/bak-ka_preview.jpg" class="image">
-						<p style="text-align:center">
-							<b>
-								Smash meets GunBound<br>
-								Responsiblities: Gameplay/Input, "Art"
-							</b>
-						</p>
-						<div class="middle">
-							<a href="#bak-ka" class="projectlink">More Info</a>
-						</div>
-					</div>
-
-
+			<div class="mygrid">
+				<div class="frame">
+					<img src="images/rumblejungle/rumblejungle_preview.png" class="image right slide-in from-left zoom">
 				</div>
 
-
-
-			</section>
-
-
-			<div class="more-stuff-grid">
-				<p style="text-align:right"  class="slide-in from-left">
-					<b style="font-size: xx-large;">Rumble Jungle</b><br>
-					<b>Responsiblities:</b> Gameplay/Input, "Art"<br>
-					Smash meets GunBound<br>
-					<a href="#rumblejungle">More Info</a>
-				</p>
-
-				<img src="images/rumblejungle/rumblejungle_preview.png" class="image slide-in from-right">
+				<div class="text_box">
+					<p class="slide-in from-right text_box_para">
+						<b class="main_gametitle">Rumble Jungle</b><br>
+						<i>Pong Battle Royale Mobile Game</i><br>
+						<b>Roles: AWS/Playfab Integration, Account Management, Monetization, Retention Design</b><br>
+						<a href="#rumblejungle" class="learnmore button">More Info</a>
+					</p>
+				</div>
 			</div>
 
 			<br>
 
-			<div class="more-stuff-grid">
-				<img src="images/fruitpunch/fruitpunch_preview.jpg" class="image slide-in from-left">
-							
-				<p style="text-align:left"  class="slide-in from-right">
-					<b style="font-size: xx-large;">Bak-ka!</b><br>
-					<b>Responsiblities:</b> Gameplay/Input, "Art"<br>
-					Smash meets GunBound<br>
+			<div class="mygrid">
+				<div class="frame">
+					<img src="images/fruitpunch/fruitpunch_preview.jpg" class="image right slide-in from-left zoom">
+				</div>
 
-					<a href="#bak-ka">More Info</a>
-				</p>
-			</div>
-
-
-			<div class="more-stuff-grid">
-				<p style="text-align:right"  class="slide-in from-left">
-					<b style="font-size: xx-large;">Sugar Heist</b><br>
-					<b>Responsiblities:</b> Gameplay/Input, "Art"<br>
-					Smash meets GunBound<br>
-					<a href="#bak-ka">More Info</a>
-				</p>
-
-				<img src="images/sugarheist/sugarheist_preview.jpg" class="image slide-in from-right">
+				<div class="text_box">
+					<p class="slide-in from-right text_box_para">
+						<b class="main_gametitle">Fruit Punch!</b><br>
+						<i>Cute Co-op Action Platformer</i><br>
+						<b>Roles: Resource Manager, Maya Animation Integration, Scripting Tools</b><br>
+						<a href="#fruitpunch" class="learnmore button">More Info</a>
+					</p>
+				</div>
 			</div>
 
 			<br>
 
-			<div class="more-stuff-grid">
-				<img src="images/bak-ka/bak-ka_preview.jpg" class="image slide-in from-left">
-							
-				<p style="text-align:left"  class="slide-in from-right">
-					<b style="font-size: xx-large;">Bak-ka!</b><br>
-					<b>Responsiblities:</b> Gameplay/Input, "Art"<br>
-					Smash meets GunBound<br>
+			<hr style="width:100%">
+			<h2 style="text-align: center;">2020</h2>
+			<hr style="width:100%">
 
-					<a href="#bak-ka">More Info</a>
-				</p>
-			</div>
-<!--
-			<div class="home-more-stuff">
-				<div class="more-stuff-grid">
-				  <img
-					src="https://unsplash.it/400"
-					alt=""
-					class="slide-in from-left"
-				  />
-				  <p class="slide-in from-right">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit,
-					quae beatae vero sit magni quaerat id ratione. Dolor optio unde amet
-					omnis sapiente neque cumque consequuntur reiciendis deserunt.
-					Dolorem vero exercitationem consequuntur, eligendi cupiditate
-					debitis facilis quibusdam magni. Eveniet.
-				  </p>
+			<div class="mygrid">
+				<div class="frame">
+					<img src="images/geropero/geropero_preview.jpg" class="image right slide-in from-left zoom">
+				</div>
+
+				<div class="text_box">
+					<p class="slide-in from-right text_box_para">
+						<b class="main_gametitle">Gero Pero</b><br>
+						<i>Slick Froggy Platformer</i><br>
+						<b>Roles: Boss Encounter, Boss Animation, Scripting Tools, Input Manager</b><br>
+						<a href="#geropero" class="learnmore button">More Info</a>
+					</p>
 				</div>
 			</div>
-		-->
 
+			<br>
+
+			<hr style="width:100%">
+			<h2 style="text-align: center;">2019</h2>
+			<hr style="width:100%">
+
+			<div class="mygrid">
+				<div class="frame">
+					<img src="images/sugarheist/sugarheist_preview.jpg" class="image right slide-in from-left zoom">
+				</div>
+
+				<div class="text_box">
+					<p class="slide-in from-right text_box_para">
+						<b class="main_gametitle">Sugar Heist</b><br>
+						<i>Candy Stealing Board Game</i><br>
+						<b>Roles: Initial Concept, Encounter Design, Rulebook, Component Design</b><br>
+						<a href="#sugarheist" class="learnmore button">More Info</a>
+					</p>
+				</div>
+			</div>
+
+			<br>
+
+			<div class="mygrid">
+				<div class="frame">
+					<img src="images/bak-ka/bak-ka_preview.jpg" class="image right slide-in from-left zoom">
+				</div>
+
+				<div class="text_box">
+					<p class="slide-in from-right text_box_para">
+						<b class="main_gametitle">Bak-ka!</b><br>
+						<i>Physics-based Platform Fighter</i><br>
+						<b>Roles: Game Design, Initial Concept, Input Manager, "Art"</b><br>
+						<a href="#bak-ka" class="learnmore button">More Info</a>
+					</p>
+				</div>
+			</div>
+
+			<br>
+			<hr style="width:100%">
+			<h2 style="text-align: center;">2016</h2>
+			<hr style="width:100%">
+
+			<div class="mygrid">
+				<div class="frame">
+					<img src="images/combatracers/combatracers_preview.png" class="image right slide-in from-left zoom">
+				</div>
+
+				<div class="text_box">
+					<p class="slide-in from-right text_box_para">
+						<b class="main_gametitle">Combat Racers</b><br>
+						<i>Car Crashing Gunning Combat</i><br>
+						<b>Roles: Unreal Programmer, Controller Inputs, Control Customization, Spotlights</b><br>
+						<a href="#combatracers" class="learnmore button">More Info</a>
+					</p>
+				</div>
+			</div>
 		</article>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-		
-		<!-- Rumble Jungle -->
+		<!--Rumble Jungle Page-->
 		<article id="rumblejungle" class="panel">
 			<header>
-				<h2>Rumble Jungle</h2>
+				<h2 style="text-align: center;">Rumble Jungle</h2>
 			</header>
 			
 			<p>
@@ -270,79 +272,151 @@
 				Now available on <a href="https://play.google.com/store/apps/details?id=com.CargoStudio.RumbleJungle" target="_blank">Google Play</a>.
 			</p>
 
-			<h3>Trailer</h3>
+			<br>
+
 			<div class="auto-resizable-iframe">
 				<div>
 					<iframe src="https://www.youtube.com/embed/3InblUGKkbc" title="Rumble Jungle Trailer" frameborder="0" allowfullscreen></iframe>
 				</div>
 			</div>
-		<!--
-			<div class="auto-resizable-iframe">
-				<div>
-				  <iframe frameborder="0" allowfullscreen="" src="http://www.youtube.com/embed/_OBlgSz8sSM"></iframe>
-				</div>
-			  </div>-->
 			<br>
-
-			<h3>Screenshots</h3>
-			<div class="gallery">
-				<div class="gallery-item gallery-item.item-3x4">
-					<img class="thumb placeholder" src="images/rumblejungle/main.png" data-src="images/rumblejungle/main.png" data-image="images/rumblejungle/main.png" data-title="" alt="">
-					<div class="caption"><span>Caption 1</span></div>
-				</div>
-				<div class="gallery-item gallery-item.item-3x4">
-					<img class="thumb placeholder" src="images/rumblejungle/main.png" data-src="images/rumblejungle/main.png" data-image="images/rumblejungle/main.png" data-title="" alt="">
-					<div class="caption"><span>Caption 1</span></div>
-				</div>
-			</div>
-		</article>		
-		
-		<article id="ashes" class="panel">
-			<header>
-				<h2>Ashes Reborn</h2>
-			</header>
-			<p>
-				Mobile game of pong battle royale. <br>
-				Now available on <a href="https://play.google.com/store/apps/details?id=com.CargoStudio.RumbleJungle" target="_blank">Google Play</a>.
-			</p>
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/zxgBxjPcFPY" title="Ashes Reborn Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</article>
-		
-		<!-- Fruit Punch! -->
+
+
+		<!--Fruit Punch Page-->
 		<article id="fruitpunch" class="panel">
 			<header>
-				<h2>Fruit Punch!</h2>
+				<h2 style="text-align: center;">Fruit Punch!</h2>
 			</header>
+			
 			<p>
-				Arcade fruits. <br>
+				<h3>Responsiblities: Resource Manager</h3><br>
+				Mobile game of pong battle royale. Originally pitched for Cargo Studio's first incubation program.<br>
 				Download it from the <a href="https://arcade.digipen.edu/games/fruit-punch" target="_blank">DigiPen Arcade</a>.
 			</p>
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/Q9MNtYdbkJ8" title="Fruit Punch! Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+			<br>
+
+			<div class="auto-resizable-iframe">
+				<div>
+					<iframe src="https://www.youtube.com/embed/Q9MNtYdbkJ8" title="Fruit Punch! Trailer" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+			<br>
 		</article>
 
 
-		<!-- Bak-ka -->
+		<!--Gero Pero Page-->
+		<article id="geropero" class="panel">
+			<header>
+				<h2 style="text-align: center;">Gero Pero</h2>
+			</header>
+			
+			<p>
+				<h3>Responsiblities: Resource Manager</h3><br>
+				Mobile game of pong battle royale. Originally pitched for Cargo Studio's first incubation program.<br>
+				Download it from the <a href="https://arcade.digipen.edu/games/fruit-punch" target="_blank">DigiPen Arcade</a>.
+			</p>
+
+			<br>
+
+			<div class="auto-resizable-iframe">
+				<div>
+					<iframe src="https://www.youtube.com/embed/EbY0yT7vrNs" title="Gero Pero Trailer" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+			<br>
+		</article>
+
+
+		<!--Sugar Heist Page-->
+		<article id="sugarheist" class="panel">
+			<header>
+				<h2 style="text-align: center;">Sugar Heist</h2>
+			</header>
+			
+			<p>
+				<!--<h3>Responsiblities: Design, Network Programming, AWS/Playfab Server Integration, Production, Monetization, Publishing</h3><br>-->
+				<i>Halloween has passed but one can never have enough candy. The neighbourhod kids are gearing up to raid each other's base of their candy stash!
+				Load up on powerful Costumes and arm your Hideout with Defences in Sugar Heist!</i>
+				<br> 
+				<br>
+				Download the rulebook <a href="images/sugarheist/sugarheist_rules.pdf" target="_blank">here</a>.
+			</p>
+
+			<br>
+
+			<div class="gallery">
+				<div class="gallery-item gallery-item.item-8x5">
+					<img class="thumb placeholder" src="images/sugarheist/components.png" data-src="images/sugarheist/components.png" data-image="images/sugarheist/components.png" data-title="Sugar Heist Components" alt="">
+					<div class="caption"><span>Game Components</span></div>
+				</div>
+				<div class="gallery-item gallery-item.item-8x5">
+					<img class="thumb placeholder" src="images/sugarheist/boxart_back.jpg" data-src="images/sugarheist/boxart_back.jpg" data-image="images/sugarheist/boxart_back.jpg" data-title="Sugar Heist Boxart (Back)" alt="">
+					<div class="caption"><span>Box Art (Back)</span></div>
+				</div><!--
+				<div class="gallery-item gallery-item.item-3x4">
+					<img class="thumb placeholder" src="images/rumblejungle/main.png" data-src="images/rumblejungle/main.png" data-image="images/rumblejungle/main.png" data-title="" alt="">
+					<div class="caption"><span>Caption 1</span></div>
+				</div>-->
+			</div>
+
+			<br>
+		</article>
+
+
+		<!--Bak-ka Page-->
 		<article id="bak-ka" class="panel">
 			<header>
-				<h2>Bak-ka</h2>
+				<h2 style="text-align: center;">Bak-ka!</h2>
 			</header>
+			
 			<p>
-				Arcade fruits. <br>
+				<h3>Responsiblities: Design, Network Programming, AWS/Playfab Server Integration, Production, Monetization, Publishing</h3><br>
+				Mobile game of pong battle royale. Originally pitched for Cargo Studio's first incubation program.<br>
 				Download it from the <a href="https://arcade.digipen.edu/games/bak-ka" target="_blank">DigiPen Arcade</a>.
 			</p>
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/rBUpPAqA34o" title="Bak-ka Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+			<br>
+
+			<div class="auto-resizable-iframe">
+				<div>
+					<iframe src="https://www.youtube.com/embed/rBUpPAqA34o" title="Bak-ka! Trailer" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
 		</article>
 
+		
+		<!--Combat Racers Page-->
+		<article id="combatracers" class="panel">
+			<header>
+				<h2 style="text-align: center;">Combat Racers</h2>
+			</header>
+			
+			<p>
+				<!--<h3>Responsiblities: Design, Network Programming, AWS/Playfab Server Integration, Production, Monetization, Publishing</h3><br>-->
+				For my polytechnic internship, I teamed up with one of the student-led studios at Kajaani University of Applied Sciences.
+				My responsiblities involved integrating gamepad controls with customizability options as well as spotlight rigging to focus on players.<br>
+				Download the rulebook <a href="https://store.steampowered.com/app/444870/Combat_Racers/-ka" target="_blank">Steam</a>.
+			</p>
+
+			<br>
+
+			<div class="auto-resizable-iframe">
+				<div>
+					<iframe src="https://www.youtube.com/embed/jo96uN2dV18" title="Combat Racers Trailer" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</article>
+	</div> <!--main-->
+
+	<!-- Footer -->
+	<div id="footer">
+		<ul class="copyright">
+			<li>&copy; WEBSITE COPYRIGHT © 2021 SHAWN LEE. ALL RIGHTS RESERVED.</li>
+		</ul>
 	</div>
-
-<!-- Footer -->
-<div id="footer">
-	<ul class="copyright">
-		<li>&copy; WEBSITE COPYRIGHT © 2021 SHAWN LEE. ALL RIGHTS RESERVED.</li>
-	</ul>
-</div>
-
-</div>
+</div> <!--wrapper-->
 
 <!-- Scripts -->
 <script src="assets/js/jquery.min.js"></script>
@@ -353,6 +427,7 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
 <script src="assets/js/gallery.js"></script>
 <script src="assets/js/observer.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/less@4.1.1" ></script>
 </body>
 
 </html>
